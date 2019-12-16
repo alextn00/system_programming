@@ -43,7 +43,7 @@ char result[50] = "  ";
 void Map();
 void ReadyMap();
 void ScoreMap();
-void node();
+void note();
 int getkey(void);
 int print_result();
 void execute(char *[]);
@@ -71,7 +71,7 @@ void main()
 			refresh();
 			execute(arglist);
 			for (int i = 0; i < 38; i++) {
-				node();
+				note();
 				refresh();
 
 				if (i == 37) {
@@ -229,7 +229,7 @@ int getkey(void)
 	return (error == 1 ? (int)ch : -1);
 }
 
-void node() {
+void note() {
 	int row;
 	int i, j;
 	int ch;
