@@ -31,7 +31,6 @@ static struct result
 	int day;
 	int hour;
 	int min;
-	int rank;
 }temp_result;
 
 int nScore = 0;
@@ -41,7 +40,6 @@ int nCombo = 0;
 int game = GAME_END;
 char result[50] = "  ";
 
-int display_menu();
 void Map();
 void ReadyMap();
 void ScoreMap();
